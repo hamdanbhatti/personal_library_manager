@@ -118,14 +118,14 @@ def main():
     library = load_library()
     
     while True:
-        console.print("\n[bold cyan]📖 Personal Library Manager[/bold cyan]", style="bold underline")
-        console.print("[bold magenta]1.[/bold magenta] Add a book")
-        console.print("[bold magenta]2.[/bold magenta] Remove a book")
-        console.print("[bold magenta]3.[/bold magenta] Search for a book")
-        console.print("[bold magenta]4.[/bold magenta] Display all books")
-        console.print("[bold magenta]5.[/bold magenta] Update a book")
-        console.print("[bold magenta]6.[/bold magenta] Display statistics")
-        console.print("[bold magenta]7.[/bold magenta] Exit")
+        console.print("\n[bold cyan]📖 Personal Library Manager\n[/bold cyan]", style="bold underline")
+        console.print("[bold magenta]1.[/bold magenta] Add a book" ,style="bold")
+        console.print("[bold magenta]2.[/bold magenta] Remove a book" ,style="bold")
+        console.print("[bold magenta]3.[/bold magenta] Search for a book" ,style="bold")
+        console.print("[bold magenta]4.[/bold magenta] Display all books" ,style="bold")
+        console.print("[bold magenta]5.[/bold magenta] Update a book" ,style="bold")
+        console.print("[bold magenta]6.[/bold magenta] Display statistics" ,style="bold")
+        console.print("[bold magenta]7.[/bold magenta] Exit" ,style="bold")
 
         choice = input("Enter your choice: ")
         
@@ -143,7 +143,7 @@ def main():
             display_statistics(library)
         elif choice == "7":
             save_library(library)
-            console.print("[bold green]📂 Library saved successfully. Goodbye![/bold green]")
+            console.print("[bold green]📂 Library saved successfully. Thank you for using Books library 🤗.\n\n --------- Goodbye! ---------[/bold green]")
             break
         else:
             console.print("[bold red]❌ Invalid choice! Please try again.[/bold red]")
